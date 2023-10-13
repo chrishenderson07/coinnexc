@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
@@ -21,7 +21,7 @@ export default createGlobalStyle`
   margin: 0 auto;
 
 	background-color: ${({ theme }) => theme.colors.background};
-
+	overflow-x: hidden!important;
 }
 
   button, a {
@@ -33,4 +33,4 @@ export default createGlobalStyle`
 		border: none;
 		outline: none;
 	}
-`;
+`

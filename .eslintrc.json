@@ -30,6 +30,8 @@
 		],
 		"import/no-extraneous-dependencies": 0,
 		"react/no-typos": 0,
-		"react/prop-types": 0
+		"react/prop-types": 0,
+		"react/no-unknown-property": 0,
+		"react/jsx-props-no-spreading": 0
 	}
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
 	width: 24rem;
@@ -14,8 +14,8 @@ export const Container = styled.div`
 	filter: drop-shadow(0px 4px 14px rgba(255, 192, 4, 0.74));
 
 	position: absolute;
-	top: -30px;
-	right: -60px;
+	top: -5%;
+	right: -20%;
 
 	.iconBox {
 		border-radius: 10px;
@@ -39,4 +39,9 @@ export const Container = styled.div`
 		font-size: 1.4rem;
 		font-weight: 400;
 	}
-`;
+
+	@media (max-width: 520px) {
+		top: -15%;
+		right: -20%;
+	}
+`

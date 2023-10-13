@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
 	padding: 2.8rem;
@@ -12,8 +12,8 @@ export const Container = styled.div`
 
 	border-radius: 3.2rem;
 	position: absolute;
-	bottom: -50px;
-	left: -75px;
+	bottom: -18%;
+	left: -15%;
 
 	h2 {
 		color: ${({ theme }) => theme.colors.softWhite};
@@ -52,4 +52,4 @@ export const Container = styled.div`
 	button {
 		font-size: 1.8rem;
 	}
-`;
+`

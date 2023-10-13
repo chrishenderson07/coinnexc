@@ -1,9 +1,11 @@
-import { Alert } from '../Alert';
-import { Coin } from '../Coin';
-import { GlassBox } from '../GlassBox';
-import { Nav } from '../Nav';
+import { Alert } from '../Alert'
+import { Circles } from '../Circles'
+import { Coin } from '../Coin'
+import { GlassBox } from '../GlassBox'
+import { Glow } from '../Glow'
+import { Nav } from '../Nav'
 
-import { Container, Counter, HeaderContent, Monitor } from './styles';
+import { Container, Counter, HeaderContent, Monitor } from './styles'
 
 export function Header() {
 	return (
@@ -22,12 +24,12 @@ export function Header() {
 						<div className="years">
 							<span>Atuação</span>
 							<strong>
-								18 + <small>anos</small>
+								18+ <small>anos</small>
 							</strong>
 						</div>
 						<div className="users">
 							<span>Usuários</span>
-							<strong>100000 +</strong>
+							<strong>100000+</strong>
 						</div>
 					</Counter>
 				</div>
@@ -42,7 +44,9 @@ export function Header() {
 						<GlassBox />
 					</Monitor>
 				</div>
+				<Circles />
+				<Glow />
 			</HeaderContent>
 		</Container>
-	);
+	)
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.header`
 	display: grid;
@@ -9,12 +9,12 @@ export const Container = styled.header`
 		'headerContent';
 
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	color: white;
 
 	z-index: 10;
 	position: relative;
-`;
+`
 
 export const HeaderContent = styled.div`
 	grid-area: 'headerContent';
@@ -39,7 +39,7 @@ export const HeaderContent = styled.div`
 		h1 {
 			color: ${({ theme }) => theme.colors.primary.softWhite};
 			font-family: ${({ theme }) => theme.fonts.DMSans};
-			font-size: 78px;
+			font-size: clamp(4.2rem, 2.5636rem + 8.1818vw, 7.8rem);
 			font-weight: 700;
 			line-height: 103%;
 
@@ -67,7 +67,16 @@ export const HeaderContent = styled.div`
 			}
 		}
 	}
-`;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		margin-top: 3.2rem;
+
+		.header-monitor {
+			justify-self: center;
+		}
+	}
+`
 
 export const Counter = styled.div`
 	display: flex;
@@ -93,7 +102,7 @@ export const Counter = styled.div`
 		strong {
 			color: ${({ theme }) => theme.colors.primary.main};
 			font-family: ${({ theme }) => theme.fonts.Outfit};
-			font-size: 6.7rem;
+			font-size: clamp(3.2rem, 1.1091rem + 10.4545vw, 7.8rem);
 			font-weight: 700;
 
 			small {
@@ -106,11 +115,12 @@ export const Counter = styled.div`
 	.users {
 		flex: 2;
 	}
-`;
+`
 
 export const Monitor = styled.div`
 	position: relative;
-	width: 37rem;
+	max-width: 37rem; /* Tamanho máximo de 320px */
+	min-width: 28rem;
 	padding: 2.8rem 4.2rem 4.2rem;
 
 	border-radius: 34px;
@@ -124,4 +134,8 @@ export const Monitor = styled.div`
 
 		margin-bottom: 1.6rem;
 	}
-`;
+
+	@media (max-width: 1024px) {
+		margin: 6.2rem auto 3.2rem 3.2rem;
+	}
+`
