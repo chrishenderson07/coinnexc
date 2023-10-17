@@ -9,5 +9,7 @@ export const Container = styled.p`
 	line-height: 140%; /* 25.2px */
 	letter-spacing: -0.36px;
 
+	/* width: 95%; */
+
 	opacity: 0.7;
 `

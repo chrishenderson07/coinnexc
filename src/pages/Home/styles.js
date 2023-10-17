@@ -40,12 +40,16 @@ export const Container = styled.div`
 	}
 
 	section#resources {
-		width: 100%;
 		margin-top: 10rem;
 
 		.resourceWrapper {
+			display: flex;
+			gap: 4.6rem;
+			text-align: left;
+
 			.resource {
 				flex: 2;
+				padding: 0 2rem;
 
 				h2 {
 					margin: 2.4rem 0;
@@ -58,6 +62,45 @@ export const Container = styled.div`
 					grid-template-rows: repeat(2, 1fr);
 					gap: 3.2rem;
 					column-gap: 6.4rem;
+
+					@media (max-width: 425px) {
+						grid-template-columns: 1fr;
+						margin: 4.6rem auto 0;
+					}
+				}
+			}
+		}
+	}
+
+	section#tools {
+		margin-top: 10rem;
+
+		.laptopImg {
+			text-align: right;
+		}
+
+		.resourceWrapper {
+			display: flex;
+			gap: 8.6rem;
+
+			.resource {
+				flex: 1;
+				padding: 0 2rem;
+
+				h2 {
+					margin: 2.4rem 0;
+				}
+
+				.iconBox {
+					margin-top: 4.6rem;
+					display: flex;
+					flex-direction: column;
+					gap: 3.2rem;
+
+					@media (max-width: 425px) {
+						grid-template-columns: 1fr;
+						margin: 4.6rem auto 0;
+					}
 				}
 			}
 		}

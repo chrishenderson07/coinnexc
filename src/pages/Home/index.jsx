@@ -6,6 +6,7 @@ import {
 	Smiley,
 } from '@phosphor-icons/react'
 
+import SideLaptop from '../../assets/images/laptop1.png'
 import Smartphone from '../../assets/images/smartphone.png'
 import Tablet from '../../assets/images/tablet.png'
 
@@ -69,6 +70,7 @@ export function Home() {
 							src={Tablet}
 							alt="Imagem de um Tablet"
 							width="80%"
+							className="tabletimg"
 						/>
 					</div>
 					<div className="resource">
@@ -106,6 +108,46 @@ export function Home() {
 								/>
 							</div>
 						</div>
+					</div>
+				</Wrapper>
+			</Section>
+			<Section id="tools">
+				<Wrapper className="resourceWrapper">
+					<div className="resource">
+						<Tag title="Trader" />
+						<Title title="As Melhores ferramentas para Traders" />
+						<Text>
+							Potencialize seu sucesso como trader com as melhores ferramentas
+							disponíveis. Tenha acesso a recursos de última geração projetados
+							para otimizar suas estratégias de negociação e maximizar seus
+							lucros.
+						</Text>
+
+						<div className="iconBoxWrapper">
+							<div className="iconBox">
+								<IconBox
+									Icon={<ChartLineUp />}
+									title="Ferramenta de Gráficos Avançado"
+									text="Acompanhe o mercado de criptomoedas com nossos gráficos
+									avançados. Tome decisões informadas e maximize seus
+									investimentos com análises precisas e em tempo real."
+									button="Saiba Mais"
+								/>
+								<IconBox
+									Icon={<Lock />}
+									title="Ampla gama de criptomoedas"
+									text="Explore nossa ampla variedade de criptomoedas. Diversifique sua carteira com acesso a uma ampla gama de opções, todas em um único lugar, para atender às suas necessidades de investimento."
+									button="Saiba Mais"
+								/>
+							</div>
+						</div>
+					</div>
+					<div className="laptopImg">
+						<img
+							src={SideLaptop}
+							alt="Imagem de Laptop"
+							width="80%"
+						/>
 					</div>
 				</Wrapper>
 			</Section>
