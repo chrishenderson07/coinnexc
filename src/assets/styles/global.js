@@ -10,6 +10,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+		/* outline: 2px solid red; */
+
   }
 
   body {
@@ -17,11 +19,11 @@ export default createGlobalStyle`
 	font-family: 'DM Sans', sans-serif;
 
 	width: 90%;
-  max-width: 1440px;
   margin: 0 auto;
 
 	background-color: ${({ theme }) => theme.colors.background};
 	overflow-x: hidden!important;
+
 }
 
   button, a {

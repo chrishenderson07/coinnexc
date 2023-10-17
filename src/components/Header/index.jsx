@@ -45,7 +45,17 @@ export function Header() {
 					</Monitor>
 				</div>
 				<Circles />
-				<Glow />
+				<Glow
+					size="532px"
+					top="-20%"
+					left="-15%"
+					className="first-glow"
+				/>
+				<Glow
+					size="532px"
+					top="40%"
+					right="0%"
+				/>
 			</HeaderContent>
 		</Container>
 	)

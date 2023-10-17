@@ -76,6 +76,12 @@ export const HeaderContent = styled.div`
 			justify-self: center;
 		}
 	}
+
+	@media (max-width: 425px) {
+		.first-glow {
+			width: 300px;
+		}
+	}
 `
 
 export const Counter = styled.div`

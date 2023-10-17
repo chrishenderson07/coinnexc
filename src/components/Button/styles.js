@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.button`
 	background-color: ${({ theme }) => theme.colors.primary.main};
@@ -9,4 +9,9 @@ export const Container = styled.button`
 
 	padding: 2rem 3.6rem;
 	border-radius: 49px;
-`;
+	width: max-content;
+
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+`

@@ -17,4 +17,4 @@ export default {
 		Outfit: "'Outfit', sans-serif",
 		DMSans: "'DMSans', sans-serif",
 	},
-};
+}

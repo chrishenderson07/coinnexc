@@ -15,4 +15,5 @@ export const Container = styled.div`
 	right: ${({ right }) => right && right};
 
 	z-index: -1;
+	overflow-x: hidden !important;
 `

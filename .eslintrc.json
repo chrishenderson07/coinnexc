@@ -25,7 +25,7 @@
 					"index"
 				],
 				"alphabetize": { "order": "asc", "caseInsensitive": true },
-				"newlines-between": "always"
+				"newlines-between": "ignore"
 			}
 		],
 		"import/no-extraneous-dependencies": 0,
