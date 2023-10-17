@@ -18,7 +18,7 @@ export default createGlobalStyle`
   font-size: 1.6rem;
 	font-family: 'DM Sans', sans-serif;
 
-	width: 90%;
+	/* width: 90%; */
   margin: 0 auto;
 
 	background-color: ${({ theme }) => theme.colors.background};

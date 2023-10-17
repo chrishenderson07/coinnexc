@@ -8,7 +8,8 @@ export const Container = styled.header`
 		'nav'
 		'headerContent';
 
-	width: 100%;
+	width: 90%;
+	margin: 0 auto;
 	min-height: 100vh;
 	color: white;
 
