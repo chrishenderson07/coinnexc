@@ -73,34 +73,112 @@ export const Container = styled.div`
 	}
 
 	section#tools {
-		margin-top: 10rem;
-
-		.laptopImg {
-			text-align: right;
-		}
-
+		margin: 10rem 0;
 		.resourceWrapper {
-			display: flex;
-			gap: 8.6rem;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 
 			.resource {
-				flex: 1;
-				padding: 0 2rem;
+				width: 85%;
+				margin: 0 auto;
 
-				h2 {
-					margin: 2.4rem 0;
-				}
+				display: flex;
+				flex-direction: column;
+				gap: 1.6rem;
+			}
+
+			.iconBoxWrapper {
+				margin-top: 3.2rem;
 
 				.iconBox {
-					margin-top: 4.6rem;
 					display: flex;
 					flex-direction: column;
-					gap: 3.2rem;
+					gap: 4.2rem;
+				}
+			}
 
-					@media (max-width: 425px) {
-						grid-template-columns: 1fr;
-						margin: 4.6rem auto 0;
-					}
+			.laptopImg {
+				text-align: right;
+			}
+
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+
+				.resource {
+					width: 100%;
+					margin: 0 auto;
+
+					align-items: center;
+				}
+
+				.laptopImg img {
+					margin-top: 4.8rem;
+					text-align: right;
+					width: 50%;
+				}
+			}
+
+			@media (max-width: 425px) {
+				.innerIconBox {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	section#callToAction {
+		.bg {
+			.relativeImage {
+				img {
+					margin-bottom: 5.2rem;
+					width: 100vw;
+					opacity: 0.8;
+				}
+
+				position: relative;
+			}
+
+			.wrapper {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 2rem;
+				align-items: center;
+
+				position: absolute;
+
+				top: 55%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				/* width: 70%; */
+				margin: 0 auto;
+				text-align: center;
+				.cta {
+					display: flex;
+					justify-content: center;
+					gap: 3.4rem;
+				}
+			}
+
+			@media (max-width: 1024px) {
+				img {
+					margin-bottom: 5.2rem;
+					width: 100vw;
+					height: 600px;
+					opacity: 0.8;
+				}
+
+				.wrapper {
+					width: 80%;
+				}
+			}
+
+			@media (max-width: 768px) {
+				img {
+					height: 200px;
 				}
 			}
 		}

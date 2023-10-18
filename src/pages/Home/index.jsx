@@ -7,10 +7,12 @@ import {
 } from '@phosphor-icons/react'
 
 import SideLaptop from '../../assets/images/laptop1.png'
+import Laptop from '../../assets/images/laptop2.png'
 import Smartphone from '../../assets/images/smartphone.png'
 import Tablet from '../../assets/images/tablet.png'
 
 import { Button } from '../../components/Button'
+import { ButtonText } from '../../components/ButtonText'
 import { Glow } from '../../components/Glow'
 import { Header } from '../../components/Header'
 import { IconBox } from '../../components/IconBox'
@@ -132,12 +134,14 @@ export function Home() {
 									avançados. Tome decisões informadas e maximize seus
 									investimentos com análises precisas e em tempo real."
 									button="Saiba Mais"
+									className="innerIconBox"
 								/>
 								<IconBox
 									Icon={<Lock />}
 									title="Ampla gama de criptomoedas"
 									text="Explore nossa ampla variedade de criptomoedas. Diversifique sua carteira com acesso a uma ampla gama de opções, todas em um único lugar, para atender às suas necessidades de investimento."
 									button="Saiba Mais"
+									className="innerIconBox"
 								/>
 							</div>
 						</div>
@@ -150,6 +154,32 @@ export function Home() {
 						/>
 					</div>
 				</Wrapper>
+			</Section>
+			<Section id="callToAction">
+				<div className="bg">
+					<div className="relativeImage">
+						<img
+							src={Laptop}
+							width="100%"
+							alt=""
+						/>
+						<div className="wrapper">
+							<Tag title="Faça Parte" />
+							<Title title="Entre agora na nossa plataforma de investimentos" />
+							<Text>
+								Chegou a hora de dar o primeiro passo para o seu futuro
+								financeiro. Entre agora na nossa plataforma de investimentos e
+								comece a construir seu caminho para o sucesso. Não perca mais
+								tempo, comece a investir hoje.
+							</Text>
+
+							<div className="cta">
+								<Button type="button">Cadastre-se</Button>
+								<ButtonText Icon={<ArrowRight size={18} />}>Login</ButtonText>
+							</div>
+						</div>
+					</div>
+				</div>
 			</Section>
 		</Container>
 	)

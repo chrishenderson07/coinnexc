@@ -16,6 +16,7 @@ export const Container = styled.nav`
 	.enter {
 		margin-left: auto;
 		display: flex;
+		gap: 4rem;
 	}
 
 	@media (max-width: 768px) {
