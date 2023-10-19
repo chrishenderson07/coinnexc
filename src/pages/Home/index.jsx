@@ -1,8 +1,8 @@
 import {
 	ArrowRight,
 	ChartLineUp,
-	Lock,
 	Handshake,
+	Lock,
 	Smiley,
 } from '@phosphor-icons/react'
 
@@ -13,6 +13,7 @@ import Tablet from '../../assets/images/tablet.png'
 
 import { Button } from '../../components/Button'
 import { ButtonText } from '../../components/ButtonText'
+import { Footer } from '../../components/Footer'
 import { Glow } from '../../components/Glow'
 import { Header } from '../../components/Header'
 import { IconBox } from '../../components/IconBox'
@@ -181,6 +182,7 @@ export function Home() {
 					</div>
 				</div>
 			</Section>
+			<Footer/>
 		</Container>
 	)
 }
