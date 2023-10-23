@@ -37,9 +37,7 @@ export function Header() {
 					<Monitor>
 						<h2>Mercado</h2>
 						<Coin />
-						<Coin />
-						<Coin />
-						<Coin />
+
 						<Alert />
 						<GlassBox />
 					</Monitor>

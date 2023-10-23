@@ -175,7 +175,9 @@ export function Home() {
 							</Text>
 
 							<div className="cta">
-								<Button type="button">Cadastre-se</Button>
+								<a href="#">
+									<Button type="button">Cadastre-se</Button>
+								</a>
 								<ButtonText Icon={<ArrowRight size={18} />}>Login</ButtonText>
 							</div>
 						</div>

@@ -12,6 +12,7 @@ export default {
 			500: '#2a2b31',
 			200: '#606166',
 		},
+		success: '#36B37E',
 	},
 	fonts: {
 		Outfit: "'Outfit', sans-serif",

@@ -1,10 +1,17 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.div`
 	display: flex;
+	flex-direction: column;
 	gap: 1.6rem;
+	text-transform: uppercase;
 
-	border-bottom: solid #5e5c5c;
+	.cointeste {
+		display: flex;
+		gap: 1.6rem;
+		border-bottom: solid #5e5c5c;
+	}
+
 	.col {
 		margin: 16px 0;
 		div {
@@ -38,4 +45,4 @@ export const Container = styled.div`
 			}
 		}
 	}
-`;
+`

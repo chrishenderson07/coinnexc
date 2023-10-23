@@ -43,4 +43,28 @@ export const TableCell = styled.td`
 	font-weight: 500;
 	color: ${({ theme }) => theme.colors.white};
 	opacity: 0.8;
+
+	.criptoName {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+	}
+`
+
+export const BuyButton = styled.a`
+	padding: 1rem;
+	color: ${({ theme }) => theme.colors.white};
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-family: ${({ theme }) => theme.fonts.Outfit};
+	border-radius: 8px;
+
+	font-weight: 700;
+	background-color: ${({ theme }) => theme.colors.success};
+
+	transition: filter 0.3s;
+	&:hover {
+		filter: brightness(1.2);
+	}
 `

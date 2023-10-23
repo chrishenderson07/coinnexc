@@ -1,11 +1,11 @@
-import { Button } from '../Button';
+import { Button } from '../Button'
 
-import { Container } from './styles';
+import { Container } from './styles'
 
 export function GlassBox() {
 	return (
 		<Container>
-			<h2>Mercado</h2>
+			<h2>Carteira</h2>
 			<div className="line">
 				<span>BTC </span>
 				<svg
@@ -63,5 +63,5 @@ export function GlassBox() {
 			</div>
 			<Button type="button">Saiba Mais</Button>
 		</Container>
-	);
+	)
 }

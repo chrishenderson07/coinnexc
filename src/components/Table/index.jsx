@@ -1,11 +1,16 @@
+import { useCripto } from '../../hooks/CriptoContext'
+
 import {
 	TableContainer,
 	ResponsiveTable,
 	TableHeader,
 	TableCell,
+	BuyButton,
 } from './styles'
 
 export function Table() {
+	const criptos = useCripto()
+
 	return (
 		<TableContainer>
 			<ResponsiveTable>
@@ -19,21 +24,29 @@ export function Table() {
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<TableCell>1</TableCell>
-						<TableCell>Exemplo 1</TableCell>
-						<TableCell>R$ 10,00</TableCell>
-						<TableCell>+5%</TableCell>
-						<TableCell>Compra</TableCell>
-					</tr>
+					{criptos.map((cripto, index) => (
+						<tr key={cripto.id}>
+							<TableCell>{index + 1}</TableCell>
+							<TableCell>
+								<div className="criptoName">
+									<img
+										src={cripto.image}
+										width={32}
+										alt={cripto.name}
+									/>
+									{cripto.name}
+								</div>
+							</TableCell>
+							<TableCell>{`$${cripto.current_price.toLocaleString()} `}</TableCell>
+							<TableCell>{`${cripto.price_change_percentage_24h.toFixed(
+								2,
+							)}%`}</TableCell>
+							<TableCell>
+								<BuyButton>Comprar</BuyButton>
+							</TableCell>
+						</tr>
+					))}
 					{/* ... (outras linhas da tabela) */}
-					<tr>
-						<TableCell>1</TableCell>
-						<TableCell>Exemplo 1</TableCell>
-						<TableCell>R$ 10,00</TableCell>
-						<TableCell>+5%</TableCell>
-						<TableCell>Compra</TableCell>
-					</tr>
 				</tbody>
 			</ResponsiveTable>
 		</TableContainer>
