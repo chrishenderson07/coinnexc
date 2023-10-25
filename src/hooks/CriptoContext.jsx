@@ -25,7 +25,6 @@ export function CriptoProvider({ children }) {
 					},
 				)
 
-				console.log('rodei agora!')
 				setCriptos(response.data)
 			} catch (error) {
 				console.log(error)
