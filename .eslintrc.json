@@ -11,8 +11,7 @@
 	"rules": {
 		"import/prefer-default-export": 0,
 		"react/react-in-jsx-scope": 0,
-		// "quotes": ["error", "single"],
-		// "no-tabs": ["error", { "allowIndentationTabs": true }],
+
 		"import/order": [
 			"error",
 			{
