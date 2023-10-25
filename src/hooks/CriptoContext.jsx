@@ -13,17 +13,18 @@ export function CriptoProvider({ children }) {
 	useEffect(() => {
 		const fetchCriptos = async () => {
 			try {
-				const response = await axios.get(
-					'https://api.coingecko.com/api/v3/coins/markets',
-					{
-						params: {
-							vs_currency: 'usd', // Escolha a moeda com a qual deseja comparar os preços
-							order: 'market_cap_desc',
-							per_page: 7, // Número de criptomoedas para exibir
-							page: 1,
-						},
-					},
-				)
+				const response = await axios
+					.get
+					// 'https://api.coingecko.com/api/v3/coins/markets',
+					// {
+					// 	params: {
+					// 		vs_currency: 'usd', // Escolha a moeda com a qual deseja comparar os preços
+					// 		order: 'market_cap_desc',
+					// 		per_page: 7, // Número de criptomoedas para exibir
+					// 		page: 1,
+					// 	},
+					// },
+					()
 
 				console.log('rodei agora!')
 				setCriptos(response.data)

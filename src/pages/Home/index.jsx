@@ -68,12 +68,11 @@ export function Home() {
 			</Section>
 			<Section id="resources">
 				<Wrapper className="resourceWrapper">
-					<div>
+					<div className="tabletimg">
 						<img
 							src={Tablet}
 							alt="Imagem de um Tablet"
 							width="80%"
-							className="tabletimg"
 						/>
 					</div>
 					<div className="resource">
@@ -184,7 +183,7 @@ export function Home() {
 					</div>
 				</div>
 			</Section>
-			<Footer/>
+			<Footer />
 		</Container>
 	)
 }

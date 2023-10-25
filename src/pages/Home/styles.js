@@ -37,6 +37,10 @@ export const Container = styled.div`
 			max-width: 80rem;
 			margin: 0 auto;
 		}
+
+		@media (max-width: 425px) {
+			text-align: center;
+		}
 	}
 
 	section#resources {
@@ -44,8 +48,13 @@ export const Container = styled.div`
 
 		.resourceWrapper {
 			display: flex;
+			justify-content: flex-start;
 			gap: 4.6rem;
-			text-align: left;
+
+			.tabletimg {
+				flex: 2;
+				text-align: left;
+			}
 
 			.resource {
 				flex: 2;
@@ -67,6 +76,12 @@ export const Container = styled.div`
 						grid-template-columns: 1fr;
 						margin: 4.6rem auto 0;
 					}
+				}
+			}
+
+			@media (max-width: 425px) {
+				.tabletimg {
+					flex: content;
 				}
 			}
 		}
@@ -129,6 +144,8 @@ export const Container = styled.div`
 	}
 
 	section#callToAction {
+		margin: 10rem 0;
+
 		.bg {
 			.relativeImage {
 				img {
@@ -177,6 +194,9 @@ export const Container = styled.div`
 			}
 
 			@media (max-width: 768px) {
+				h2 {
+					font-size: 2.8rem;
+				}
 				img {
 					height: 200px;
 				}

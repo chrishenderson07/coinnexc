@@ -14,4 +14,8 @@ export const Container = styled.button`
 	display: flex;
 	align-items: center;
 	gap: 0.8rem;
+
+	@media (max-width: 425px) {
+		align-self: center;
+	}
 `

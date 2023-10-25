@@ -40,7 +40,7 @@ export const HeaderContent = styled.div`
 		h1 {
 			color: ${({ theme }) => theme.colors.primary.softWhite};
 			font-family: ${({ theme }) => theme.fonts.DMSans};
-			font-size: clamp(4.2rem, 2.5636rem + 8.1818vw, 7.8rem);
+			font-size: clamp(3.6rem, 0.762rem + 10.684vw, 7.6rem);
 			font-weight: 700;
 			line-height: 103%;
 

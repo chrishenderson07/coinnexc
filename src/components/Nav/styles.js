@@ -10,8 +10,8 @@ export const Container = styled.nav`
 	margin-top: 2.6rem;
 
 	img {
-		max-width: 320px; /* Tamanho máximo de 320px */
-		min-width: 280px; /* Tamanho mínimo de 280px */
+		max-width: 280px; /* Tamanho máximo de 320px */
+		min-width: 260px; /* Tamanho mínimo de 280px */
 	}
 	.enter {
 		margin-left: auto;

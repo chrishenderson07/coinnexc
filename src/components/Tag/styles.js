@@ -13,4 +13,8 @@ export const Container = styled.div`
 	text-transform: uppercase;
 
 	background-color: rgba(255, 255, 255, 0.1);
+
+	@media (max-width: 425px) {
+		margin: 0 auto;
+	}
 `
