@@ -13,7 +13,9 @@ export function IconBox({ Icon, title, text, button, className }) {
 			<h3>{title}</h3>
 			<Text>{text}</Text>
 			{button && (
-				<ButtonText Icon={<ArrowRight size={18} />}>{button}</ButtonText>
+				<a href="http://coinnexc.com/register">
+					<ButtonText Icon={<ArrowRight size={18} />}>{button}</ButtonText>
+				</a>
 			)}
 		</Container>
 	)

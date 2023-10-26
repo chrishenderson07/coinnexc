@@ -38,9 +38,11 @@ export function Home() {
 							Milhões de usuários confiam em nós, e você também pode. A prova
 							está na nossa plataforma:
 						</Text>
-						<Button type="button">
-							Comece aqui <ArrowRight size={32} />
-						</Button>
+						<a href="http://coinnexc.com/register">
+							<Button type="button">
+								Comece aqui <ArrowRight size={32} />
+							</Button>
+						</a>
 					</div>
 
 					<div className="col">
@@ -174,10 +176,12 @@ export function Home() {
 							</Text>
 
 							<div className="cta">
-								<a href="#">
+								<a href="http://coinnexc.com/register">
 									<Button type="button">Cadastre-se</Button>
 								</a>
-								<ButtonText Icon={<ArrowRight size={18} />}>Login</ButtonText>
+								<a href="http://coinnexc.com/login">
+									<ButtonText Icon={<ArrowRight size={18} />}>Login</ButtonText>
+								</a>
 							</div>
 						</div>
 					</div>

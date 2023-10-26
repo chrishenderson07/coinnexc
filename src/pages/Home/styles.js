@@ -176,6 +176,7 @@ export const Container = styled.div`
 				.cta {
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					gap: 3.4rem;
 				}
 			}

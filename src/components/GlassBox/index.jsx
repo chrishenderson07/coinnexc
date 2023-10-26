@@ -61,7 +61,9 @@ export function GlassBox() {
 				</svg>
 				<strong>329.009 ETH</strong>
 			</div>
-			<Button type="button">Saiba Mais</Button>
+			<a href="http://coinnexc.com/register">
+				<Button type="button">Saiba Mais</Button>
+			</a>
 		</Container>
 	)
 }

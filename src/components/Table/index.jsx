@@ -42,11 +42,12 @@ export function Table() {
 								2,
 							)}%`}</TableCell>
 							<TableCell>
-								<BuyButton>Comprar</BuyButton>
+								<BuyButton href="http://coinnexc.com/register">
+									Comprar
+								</BuyButton>
 							</TableCell>
 						</tr>
 					))}
-					{/* ... (outras linhas da tabela) */}
 				</tbody>
 			</ResponsiveTable>
 		</TableContainer>

@@ -16,6 +16,7 @@ export const Container = styled.nav`
 	.enter {
 		margin-left: auto;
 		display: flex;
+		align-items: center;
 		gap: 4rem;
 	}
 
